@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:descendantFocusability= "blocksDescendants"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/search_list_item_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="歌名"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginLeft="10sp"
+            />
+        <TextView
+            android:id="@+id/search_list_item_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9E9E9E"
+            android:layout_marginLeft="10sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="歌手"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/add_favor_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:focusable="false"
+        android:background="@drawable/favorite_add"
+        />
+
+
+</LinearLayout>
